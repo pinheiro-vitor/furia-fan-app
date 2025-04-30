@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // ATENÇÃO: Este componente Sidebar é grande. Considere dividir em subcomponentes menores caso novas funcionalidades sejam adicionadas, para manter organização e performance.
 
 import * as React from "react"
