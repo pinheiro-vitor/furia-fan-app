@@ -11,15 +11,15 @@ Veja abaixo exemplos das principais rotas da aplicação:
 
 **Página Inicial** (`/`)
 
-![Home](public/images/inicial.png)
+![Home](./public/images/inicial.png)
 
 **Cadastro** (`/register`)
 
-![Cadastro](public/images/register.png)
+![Cadastro](./public/images/register.png)
 
 **Dashboard** (`/dashboard`)
 
-![Dashboard](public/images/dashboard.png)
+![Dashboard](./public/images/dashboard.png)
 
 ## ✨ Tecnologias Utilizadas
 - **Next.js** (React)
