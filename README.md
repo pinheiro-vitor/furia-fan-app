@@ -9,9 +9,17 @@ Aplicação web para fãs da FURIA, com registro de usuários, upload de documen
 
 Veja abaixo exemplos das principais rotas da aplicação:
 
-| Página Inicial (`/`) | Cadastro (`/register`) | Dashboard (`/dashboard`) |
-|:--------------------:|:---------------------:|:-----------------------:|
-| ![Home](public/images/inicial.png) | ![Cadastro](public/images/register.png) | ![Dashboard](public/images/dashboard.png) |
+**Página Inicial** (`/`)
+
+![Home](public/images/inicial.png)
+
+**Cadastro** (`/register`)
+
+![Cadastro](public/images/register.png)
+
+**Dashboard** (`/dashboard`)
+
+![Dashboard](public/images/dashboard.png)
 
 ## ✨ Tecnologias Utilizadas
 - **Next.js** (React)
