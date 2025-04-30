@@ -3,8 +3,8 @@ import './globals.css'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Furia - Know Your Fan',
+  description: 'A plataforma oficial para fãs da FURIA se conectarem, registrarem perfis e participarem da comunidade.',
   generator: 'v0.dev',
 }
 
