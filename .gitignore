@@ -25,3 +25,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# VSCode settings (opcional)
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Linux temporary files
+*~
+*.swp
+
+# Prisma (caso use)
+.prisma/
+*.sqlite
