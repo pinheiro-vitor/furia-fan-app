@@ -1,0 +1,69 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  cpf           String    @unique
+  phone         String
+  birthdate     DateTime
+  address       String
+  city          String
+  state         String
+  zipCode       String
+  interests     String[]
+  events        String?
+  purchases     String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  documents     Document[]
+  socialProfiles SocialProfile[]
+  esportsProfiles EsportsProfile[]
+}
+
+model Document {
+  id            String    @id @default(cuid())
+  userId        String
+  type          String    // "id" ou "selfie"
+  url           String
+  validated     Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model SocialProfile {
+  id            String    @id @default(cuid())
+  userId        String
+  platform      String
+  username      String
+  profileUrl    String
+  analyzed      Boolean   @default(false)
+  analysisData  Json?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model EsportsProfile {
+  id            String    @id @default(cuid())
+  userId        String
+  platform      String
+  profileUrl    String
+  validated     Boolean   @default(false)
+  relevanceScore Int?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
