@@ -5,6 +5,14 @@
 
 Aplicação web para fãs da FURIA, com registro de usuários, upload de documentos, integração social e notificações. Feita com foco em experiência do usuário e integração com serviços modernos.
 
+## 🖼️ Demonstração Visual
+
+Veja abaixo exemplos das principais rotas da aplicação:
+
+| Página Inicial (`/`) | Cadastro (`/register`) | Dashboard (`/dashboard`) |
+|:--------------------:|:---------------------:|:-----------------------:|
+| ![Home](public/images/inicial.png) | ![Cadastro](public/images/register.png) | ![Dashboard](public/images/dashboard.png) |
+
 ## ✨ Tecnologias Utilizadas
 - **Next.js** (React)
 - **TypeScript**
