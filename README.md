@@ -1,4 +1,4 @@
-# FURIA Fan App
+# FURIA - Know Your Fan
 
 ![Node.js](https://img.shields.io/badge/node-%3E=18.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
